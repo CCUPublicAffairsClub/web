@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CCU 公共事務研習社 學生自治</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<!--icon引用-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--字體引用-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap" rel="stylesheet">
+
+<!--引用bootstrap會讓字體大小也改變，為了統一大小才加入的，但實際上這頁面沒用到-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<!--網頁標題logo引用-->
+<link rel="icon" href="../logo.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="../logo.ico" type="image/x-icon"/>
+<style>
+body {
+    margin: 0;
+    font-family: 'Noto Serif TC', serif;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.navbar1 {
+  overflow: hidden;
+  background-color: #444343;  
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.navbar1 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar1 a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar1 a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.navbar1 .icon {
+  display: none;
+}
+
+.main {
+  margin-left: 10px; 
+  padding: 0px 10px;
+}
+
+.row {
+  margin: 8px -16px;
+}
+/* 每列之間有間格 */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 建立一排三個格子 */
+.column {
+  float: left;
+  width: 33%;
+  padding:10px;
+}
+
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  width:100%;
+}
+/*放團隊政見或是當間隔*/
+.block {
+  background-color: #00B0F0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color:white;
+  font-size:20px;
+}
+
+@media screen and (max-width: 900px) {
+    .column {width: 100%;}
+}
+
+@media screen and (max-width: 600px) {
+  .navbar1 a:not(:first-child) {display: none;}
+  .navbar1 a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar1.responsive .icon {
+    position: absolute;
+    right: 0;
+    bottom:0;
+  }
+  .navbar1.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+  #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#00B0F0;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover { /*靠近之後的顏色*/
+  background-color: #FF2626;
+}
+</style>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<!-- main -->
+<div class="main">
+
+  <h1>CCU公共事務研習社 學生自治</h1>
+  <hr>
+  <div class="navbar1" id="myNavbar">
+  <a href="../index.html"><i class="fa fa-fw fa-home fa-1x"></i> 首頁</a>
+  <a href="public_issue.html"><i class="fa fa-comment"></i> 公共議題</a>
+  <a href="https://reurl.cc/5rvXp7"><i class="fa fa-users fa-1x"></i> 人脈清單</a>
+  <a href="activity.html"><i class="fa fa-calendar"></i> 歷年活動</a>
+  <a href="Student_autonomy.html"><i class="fa fa-university"></i> 學生自治</a>
+  <a href="#footer"><i class="fa fa-fw fa-envelope fa-1x"></i> 聯絡我們</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+  <br>
+  <h4>
+  也可以瀏覽這個網站－＞<a href="https://sites.google.com/alum.ccu.edu.tw/ccupa2020election">二Ｏ二Ｏ公研參戰</a>
+  </h4>
+ 
+    <div class="block">
+    <h2>2020公研團隊政見</h2>
+    <h4>
+    壹、勿虛擲光陰
+                 ｜廢除通識國文課程！<br><br>
+    貳、莫因循苟且
+                 ｜選課系統要更好！<br><br>
+    參、要構造改革
+                 ｜全面檢討學生自治組織及選舉制度！<br>
+    </h4>
+    </div>
+
+    <br><br>
+    <div class="block" style="background-color:#c9c5c5;color:#444343">
+    <h3>公共事務研習社推薦<br><br>2020學生議會議員候選人</h3>
+    </div>
+ <!-- 議員候選人 -->
+  <div class="row">
+
+    <div class="column">
+      <div class="content">
+        <img src="https://i.imgur.com/11NXnFz.png" alt="誰說鍵盤不能毀滅世界？" title="吉娃娃終結者" style="width:100%">
+        <a href="https://sites.google.com/alum.ccu.edu.tw/ccupa2020election/%E9%A6%96%E9%A0%81/%E5%90%89%E5%A8%83%E5%A8%83%E7%B5%82%E7%B5%90%E8%80%85?authuser=0" style="color:black"><h3>誰說鍵盤不能毀滅世界？</h3></a>
+        <p>議會GDB，校園DEBUG！</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="content">
+      <img src="https://i.imgur.com/fLN5Lve.png" alt="想知道我要帶你往哪去嗎？" title="學權領航員" style="width:100%">
+        <a href="https://sites.google.com/alum.ccu.edu.tw/ccupa2020election/%E9%A6%96%E9%A0%81/%E5%AD%B8%E6%AC%8A%E9%A0%98%E8%88%AA%E5%93%A1" style="color:black"><h3>想知道我要帶你往哪去嗎？</h3></a>
+        <p>解構世代，學權改革</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="content">
+      <img src="https://i.imgur.com/Z36Qxdw.png" alt="我住台糖市也要跟你說？"title="學權戰鬥員" style="width:100%">
+        <a href="https://sites.google.com/alum.ccu.edu.tw/ccupa2020election/%E9%A6%96%E9%A0%81/%E5%AD%B8%E6%AC%8A%E6%88%B0%E9%AC%A5%E5%93%A1?authuser=0" style="color:black"><h3>我住台糖市也要跟你說？</h3></a>
+        <p>你的戰鬥，我來打！</p>
+      </div>
+    </div>
+    
+  <!-- 議員候選人結束 -->
+
+
+
+  <br><br>
+    <div class="block" style="background-color:#c9c5c5;color:#444343">
+    <h3>公共事務研習社推薦<br><br>2020學生議會議員候選人</h3>
+    </div>
+   <!-- 校務會議代表 -->
+  <div class="row">
+
+    <div class="column">
+      <div class="content">
+        <img src="https://i.imgur.com/QzDlxhf.png" alt="讓我告訴你怎麼找線索？" title="法規徵信師" style="width:100%">
+        <a href="https://sites.google.com/alum.ccu.edu.tw/ccupa2020election/%E9%A6%96%E9%A0%81/%E6%B3%95%E8%A6%8F%E5%BE%B5%E4%BF%A1%E5%B8%AB?authuser=0" style="color:black"><h3>讓我告訴你怎麼找線索？</h3></a>
+        <p>高舉校代的法槌，瑀你彤仇敵愾！</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="content">
+      <img src="https://i.imgur.com/yO7eleC.png" alt="你各位敢不敢站出來？" title="菜市場囡仔" style="width:100%">
+        <a href="https://sites.google.com/alum.ccu.edu.tw/ccupa2020election/%E9%A6%96%E9%A0%81/%E8%8F%9C%E5%B8%82%E5%A0%B4%E5%9B%A1%E4%BB%94?authuser=0" style="color:black"><h3>你各位敢不敢站出來？</h3></a>
+        <p>我們來說價，全部都坐下。 </p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="content">
+      <img src="https://i.imgur.com/Iiv8nGu.png" alt="我住台糖市也要跟你說？"title="靠北機械李" style="width:100%">
+        <a href="https://sites.google.com/alum.ccu.edu.tw/ccupa2020election/%E9%A6%96%E9%A0%81/%E9%9D%A0%E5%8C%97%E6%A9%9F%E6%A2%B0%E6%9D%8E?authuser=0" style="color:black"><h3>雖然我講話靠北，但我做事靠譜</h3></a>
+        <p>斡旋在匿名版，是人民的聲音。</p>
+      </div>
+    </div>
+    
+  <!-- 校代結束結束 -->
+  </div><!--其實我不知道這個是對應到啥 笑死-->
+
+
+
+  <br>
+  <div class="footer" id="footer">
+  <h2>聯絡我們</h2>
+  <a href="https://www.facebook.com/CCUPublicAffairsClub"><img src="https://i.imgur.com/kbV5JLa.png" style="width:40px;height:40px;margin:10px 15px"></a>
+  <a href="mailto:ccupa2020@gmail.com"><img src="https://i.imgur.com/M8ReKSU.png" style="width:40px;height:40px;margin:10px 15px"></a>
+  <a href="https://www.youtube.com/channel/UCpxbVoYa1C4POfOIr1_qgOQ"><img src="https://i.imgur.com/jZQLGGR.png" style="width:40px;height:40px;margin:10px 15px"></a>
+  <h3><a href="https://ppt.cc/f8pXIx">入社表單點這裡</a></h3>
+  <h4>網站設計及撰寫 范瑄育</h4>
+  </div>
+</div>
+  <!-- END MAIN -->
+
+<script>
+//宣告按鈕
+  var mybutton = document.getElementById("myBtn");
+  
+  // 當往下滑20px之後，顯示按鈕
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+   /*點選後回到畫面最上方*/
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar1") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar1";
+  }
+}
+</script>
+
+</body>
+</html>
