@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<title>談「針對女性的暴力」，還恰不恰當？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="keywords" content="ccu公共事務研習社">
+<meta name="description" content="我們是來自中正大學的ccu公共事務研習社">
+<!--icon引用-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--字體引用-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap" rel="stylesheet">
+
+<!--圖片輪播引用-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<link rel="icon" href="logo.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="logo.ico" type="image/x-icon"/>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Serif TC', serif;
+  margin: 0;
+}
+
+
+/* 邊邊的社團介紹用 */
+.fakeimg {
+  background-color: #00B0F0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color:white;
+  font-size:20px;
+}
+
+/* header的h1字體大小增加 */
+.header h1 {
+  font-size: 40px;
+}
+
+/* 選單 */
+.navbar1 {
+  overflow: hidden;
+  background-color: #444343;
+}
+
+/* 選單按鈕 */
+.navbar1 a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* 最右邊選單按鈕 */
+.navbar1 a.right {
+  float: right;
+}
+
+/* 靠近之後按鈕變色 */
+.navbar1 a:hover {
+  background-color: #ddd;
+  color: rgb(0, 0, 0);
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  -webkit-flex: 30%; /*chrome*/
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  -webkit-flex: 70%; /*chrome*/
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+/*---時事用-----*/
+
+.row1 {
+  font-family: 'Noto Serif TC', serif;
+  margin: 8px -16px;
+}
+
+/* 每列之間有間格 */
+.row1,
+.row1 > .column {
+  padding: 8px;
+}
+
+/* Clear floats after rows */ 
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 建立一排三個格子 */
+.column {
+  float: left;
+  width: 33%;
+}
+
+.content {
+  background-color: #00B0F0;
+  padding: 10px;
+}
+
+/*---時事用end-----*/
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+
+
+/* 適應介面，如果螢幕寬度小於700px，使兩列互相堆疊，而非相鄰 */
+@media screen and (max-width: 700px) {
+  .column {width: 100%;}
+  .row1 {   
+    flex-direction: column;
+  }
+}
+
+/* 適應介面，如果寬度小於400px就讓選單互相堆疊 */
+@media screen and (max-width: 400px) {
+  .navbar1 a {
+    float: none;
+    width: 100%;
+  }
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#FF2626;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;         
+}
+
+#myBtn:hover { /*靠近之後的顏色*/
+  background-color: #00B0F0;
+}
+</style>
+</head>
+<body>
+<!--這是回到頂端按鈕-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!--回到頂端按鈕end-->
+
+
+<!--橫向列表-->
+<div class="navbar1">
+  <a href="../../index.html"><i class="fa fa-fw fa-home fa-1x"></i> 首頁</a>
+  <a href="../public_issue.html"><i class="fa fa-comment"></i> 公共議題</a>
+  <a href="../article.html"><i class="fa fa-users fa-1x"></i> 讀者投書</a>
+  <a href="../activity.html"><i class="fa fa-calendar"></i> 歷年活動</a>
+  <a href="../Student_autonomy.html"><i class="fa fa-university"></i> 學生自治</a>
+  <a href="#footer" class="right"><i class="fa fa-fw fa-envelope fa-1x"></i> 聯絡我們</a>
+</div>
+<!--橫向列表end-->
+
+<div class="row">
+  <div class="side">
+    <h2 >關於 公共事務研習社</h2>
+    <img src="https://i.imgur.com/f58pSWe.jpg" style="height:200; padding: 20px; width: 100%;"><h3>中正大學異議性社團</h3></img>
+    <div class="fakeimg" style="height:300px; text-align: left;">本社團致力於提供學生公共事務討論之平台。<br>本社團三大主軸為：<br>一、公共事務<br>二、社會創新<br>三、議題思辨<br>歡迎有興趣的同學加入，定期follow粉專</div><br>
+  </div>
+  <div class="main">
+    <h1 align="center">【談「針對女性的暴力」，還恰不恰當？】</h1><h4 align="left">作者：蔡承宏</h4>
+    <hr>
+    <p><i>End Violence Against Women. 結束對婦女的暴力。</i><br><br>
+        &nbsp&nbsp我們剛結束不平靜的2021年。然而，在疫情壟罩下，臺灣社會在這一年裡也發生多起性別暴力事件，包括國會議員遭受親密關係暴力、多名女性知名人物遭到「換臉」的Deepfake犯罪事件，更在多起重大跟蹤騷擾事件後，多個婦女與性別團體倡議許久的《跟蹤騷擾防制法》終於在立法院三讀通過，即便通過後仍餘波盪漾、存在許多立法技術與實施的爭議。這些事件都在提醒我們：抵抗性別不平等是刻不容緩。<br><br>
+        &nbsp&nbsp也許很多人都有這樣的經驗：在當前臺灣社會中討論性別暴力時，許多人會提出「男性也會遭受暴力」的論點，藉以回應、反駁女性作為暴力防治的主要保護群體的制度設計。對我而言，這樣的論點有種前幾年美國社會內部，為對抗「黑人的命也是命」（black lives matter）而產生「所有的命都是命」（all lives matter）的企圖模糊焦點感。我並不反對，甚至也同樣支持男性性別暴力倖存者必須被納入國家政策考量的過程中（可參閱蔡承宏、鍾道詮、王舒芸，forthcoming），但在這篇文章中，我要主張：指出「針對女性的暴力」（violence against women）不僅恰當，更是必要的。<br><br>
+        &nbsp&nbsp為何標示出女性身為主要遭受性／別暴力侵害群體，有其必要性？因為透過帶出這類暴力事件具有「性別化模式」（gendered pattern）之特性，我們才能更理解社會性壓迫（societal oppression）的機制與找出解方。如Powell & Henry（2017）透過檢視美國相關犯罪數據與學界研究，發現絕大多數性暴力受害者為女性，加害者則為男性；臺灣的相關案件數據也能指明這項性別暴力特徵。在行政院性別平等處所公布的《2022性別圖像》中，2020年家庭暴力通報案件中，親密關係暴力被害人數為5萬2,535人，其中被害人為女性共4萬2,151人（占80.2％），男性為1萬377人（占19.8％）。而當我們開始意識到這個社會的基礎是一種基於性別的階級關係（Firestone, 1970）時，才能開始真正肯認女性面臨的脆弱處境。<br><br>
+        &nbsp&nbsp回到此時此刻談論「針對女性的暴力」，還恰不恰當？我想答案是肯定的。如前述我一再提起的，許多訴諸於男性同樣遭受暴力的論述，並無法同程度地抹滅看見與肯認女性的性別暴力經驗是重要的。自女性主義運動（Feminist Movements）發展至今，我們對性別暴力的認知仍不停地變動與調整，如即使目前暴力型態已經不再僅是傳統的權力控制（Power and Control Wheel）、是基於明顯的權力關係與控制意圖，而指出對女性的暴力，更是為提醒：女性有其易於面臨、遭受暴力的脆弱性（vulnerability）。臺灣自2007年簽署聯合國《消除對婦女一切形式歧視公約》（The Convention on the Elimination of all Forms of Discrimination Against Women, CEDAW），也將在今年（2022）迎來第四次國際專家審查會議。國內女性處境仍是有待改善的，而這也是我們需要反省性別權力關係與採取相關社會行動的關鍵時候。<p>
+        
+
+
+  </div>
+    <!-- 近期活動列結束 -->
+  </div>
+</div>
+<br>
+<div class="footer" id="footer">
+  <h2>聯絡我們</h2>
+  <a href="https://www.facebook.com/CCUPublicAffairsClub"><img src="https://i.imgur.com/kbV5JLa.png" style="width:40px;height:40px;margin:10px 15px"></a>
+  <a href="mailto:ccupa2020@gmail.com"><img src="https://i.imgur.com/M8ReKSU.png" style="width:40px;height:40px;margin:10px 15px"></a>
+  <a href="https://www.youtube.com/channel/UCpxbVoYa1C4POfOIr1_qgOQ"><img src="https://i.imgur.com/jZQLGGR.png" style="width:40px;height:40px;margin:10px 15px"></a>
+  <h3><a href="https://ppt.cc/f8pXIx">入社表單點這裡</a></h3>
+  <h4>網站設計及撰寫 范瑄育</h4>
+</div>
+
+<script>
+    /*宣告按鈕*/
+    var mybutton = document.getElementById("myBtn");
+    
+    /* 當畫面下滑20px之後顯示按鈕*/
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    /*點選後回到畫面最上方*/
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+</body>
+</html>
